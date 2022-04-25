@@ -16,5 +16,5 @@ app.listen(3030, () => {console.log('Servidor corriendo')});
 // los Get:
 
 app.get('/', (req, res)=>{
-    res.sendFile('./views/home.html')
+    res.sendFile(path.resolve(__dirname, './views/home.html'))
 })
